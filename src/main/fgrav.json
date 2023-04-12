@@ -1,0 +1,34 @@
+{
+  "color": {
+    "Flames": {
+      "uri": "color:Flames"
+    },
+    "Js": {
+      "uri": "color:Js"
+    },
+    "Java": {
+      "uri": "color:Java",
+      "overlays": [ "Blocking", "Reflection" ]
+    }
+  },
+  "overlay": {
+    "Blocking": {
+      "uri": "overlay:Java_Blocking"
+    },
+    "Reflection": {
+      "uri": "overlay:Java_Reflection"
+    }
+  },
+  "filter": {
+    "Java8": {
+      "uri": "filter:Java8"
+    },
+    "RemoveJavaGCThreads": {
+      "uri": "filter:RemoveJavaGCThreads"
+    },
+    "RemoveThreadFrame": {
+      "uri": "filter:RemoveThreadFrame"
+    }
+  }
+}
+
