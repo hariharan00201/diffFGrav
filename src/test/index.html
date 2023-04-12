@@ -126,7 +126,7 @@
                 urlParams.push(key + "=" + value);
             }
         });
-        setTimeout(()=>{},5000);
+        // setTimeout(()=>{},5000);
         window.location.href = name + "?" + urlParams.join("&");
     }
 
@@ -179,7 +179,7 @@
     }
 
     function urlVal(selector) {
-        console.log("first    "+$("#fd1st").multipleSelect('getSelects')[0]);
+        console.log("first    "+$("#fd1st").multipleSelect('getSelects'));
         console.log("second    "+$("#fd2nd").multipleSelect('getSelects'));
         return function() { return $(selector).multipleSelect('getSelects')[0] };
     }
