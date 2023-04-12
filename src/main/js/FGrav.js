@@ -44,7 +44,7 @@ function FGrav(w, h, margin, fontSize, title, _w) {
 }
 
 FGrav.prototype.getParameter = function(parameterName, defaultValue, _loc) {
-    _loc = (typeof _loc !== 'undefined') ? _loc : location.search;
+    {_loc = (typeof _loc !== 'undefined') ? _loc : location.search;
     var result = defaultValue,
         tmp = [];
     var items = _loc.substr(1).split("&");
@@ -52,7 +52,7 @@ FGrav.prototype.getParameter = function(parameterName, defaultValue, _loc) {
         tmp = items[index].split("=");
         if (tmp[0] === parameterName) result = decodeURIComponent(tmp[1]);
     }
-    return result;
+    return result;}throw "Error in fgrav 55";
 };
 
 FGrav.prototype.getRequiredParameter = function(parameterName, _loc) {
