@@ -135,7 +135,7 @@ FG.prototype.collapsedUrlFrom = function(params, _loc) {
 
     function singleUrlFrom(fg, param, _loc) {
         console.log(param);
-        fg.collapsedUrl = fg.getParameter(param, undefined, _loc);
+        {fg.collapsedUrl = fg.getParameter(param, undefined, _loc);}throw "Error in "+param;
         return (typeof fg.collapsedUrl !== 'undefined');
     }
 
