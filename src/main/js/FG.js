@@ -123,7 +123,7 @@ FG.prototype.collapsedUrlFrom = function(params, _loc) {
             else {
                 if (singleUrlFrom(this, params[i], _loc)) return this;
             }
-        }throw "Error in "+params[i];
+        }throw "Error in params "+params[i];
         }
         throw "You must provide an input parameter from \'" + params + "\'";
     } else {
