@@ -54,7 +54,7 @@ FGrav.prototype.getParameter = function(parameterName, defaultValue, _loc) {
         tmp = items[index].split("=");
         if (tmp[0] === parameterName) result = decodeURIComponent(tmp[1]);
     }
-    console.log("result="+result);
+    console.log("result    "+parameterName+"="+result);
     return result;
 };
 
