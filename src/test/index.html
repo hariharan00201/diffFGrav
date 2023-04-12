@@ -179,6 +179,7 @@
     }
 
     function urlVal(selector) {
+        console.log($(selector).multipleSelect('getSelects')[0]);
         return function() { return $(selector).multipleSelect('getSelects')[0] };
     }
 
