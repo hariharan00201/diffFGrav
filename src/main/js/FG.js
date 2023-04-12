@@ -117,13 +117,13 @@ FG.prototype.collapsedUrlFrom = function(params, _loc) {
     if (Array.isArray(params)) {
         var i;
         for (i = 0; i < params.length; i++) {
-            {if (Array.isArray(params[i])) {
-                if (mutipleUrlsFrom(this, params[i], _loc)) return this;
+            if (Array.isArray(params[i])) {
+                {if (mutipleUrlsFrom(this, params[i], _loc)) return this;}throw "Error in mul"
             }
             else {
-                if (singleUrlFrom(this, params[i], _loc)) return this;
+                {if (singleUrlFrom(this, params[i], _loc)) return this;}throw "Error in sin"
             }
-        }throw "Error in params "+params[i];
+        
         }
         throw "You must provide an input parameter from \'" + params + "\'";
     } else {
