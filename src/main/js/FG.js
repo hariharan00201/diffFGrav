@@ -118,10 +118,10 @@ FG.prototype.collapsedUrlFrom = function(params, _loc) {
         var i;
         for (i = 0; i < params.length; i++) {
             if (Array.isArray(params[i])) {
-                {if (mutipleUrlsFrom(this, params[i], _loc)) return this;}throw "Error in mul"
+                if (mutipleUrlsFrom(this, params[i], _loc)) return this;
             }
             else {
-                {if (singleUrlFrom(this, params[i], _loc)) return this;}throw "Error in sin"
+                if (singleUrlFrom(this, params[i], _loc)) return this;
             }
         
         }
@@ -134,8 +134,8 @@ FG.prototype.collapsedUrlFrom = function(params, _loc) {
     return this;
 
     function singleUrlFrom(fg, param, _loc) {
-        fg.collapsedUrl = fg.getParameter(param, undefined, _loc);
-        return (typeof fg.collapsedUrl !== 'undefined');
+        {fg.collapsedUrl = fg.getParameter(param, undefined, _loc);}throw "line1";
+        {return (typeof fg.collapsedUrl !== 'undefined');}throw "line1";
     }
 
     function mutipleUrlsFrom(fg, params, _loc) {
