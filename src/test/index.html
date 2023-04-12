@@ -180,7 +180,7 @@
 
     function urlVal(selector) {
         console.log("first    "+$("#fd1st").multipleSelect('getSelects')[0]);
-        console.log("second    "+$("#fd2nd").multipleSelect('getSelects')[1]);
+        console.log("second    "+$("#fd2nd").multipleSelect('getSelects'));
         return function() { return $(selector).multipleSelect('getSelects')[0] };
     }
 
