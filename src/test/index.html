@@ -122,6 +122,7 @@
         $.each(params, function( key, valueFunction) {
             var value = valueFunction();
             if (value) {
+                console.log(key + "=" + value);
                 urlParams.push(key + "=" + value);
             }
         });
