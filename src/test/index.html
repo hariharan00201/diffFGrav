@@ -90,7 +90,7 @@
 <script src="https://unpkg.com/multiple-select@1.5.2/dist/multiple-select.min.js"></script>
 <script type="text/javascript">
     $(document).ready(function() {
-        getOptions( "/collapsed/", itemEndsWith(".collapsed"), identity, prepend("/collapsed/"),
+        getOptions( "/collapsed/", itemEndsWith(".txt"), identity, prepend("/collapsed/"),
             ["#fgUrl", "#fcLeftUrl", "#fcRightUrl", "#fd1st", "#fd2nd"]);
         getOptions( "/js/color/", jsFiles("FG_Color_"), optionKey("FG_Color_"), identity,
             ["#fgColor", "#fcColor"]);
